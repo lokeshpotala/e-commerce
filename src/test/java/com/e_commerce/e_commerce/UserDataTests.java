@@ -336,7 +336,7 @@ class UserDataTests {
 		cdao.save(x);
 		Payment p=pdao.findByOrderId(o);
 		int pid=p.getPaymentId();
-		uservice.addCardDetails(u.getUserId(), pid, x);
+		uservice.addCardDetails(pid,u.getUserId(), x);
 		List<Card> cards= new ArrayList<Card>();
 		cards.add(x);
 		assertEquals(cards.toString(),p.getCardDetails().toString());

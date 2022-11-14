@@ -202,20 +202,5 @@ public class AdminController {
 		
 
 		
-
-		
-		
-/*		@DeleteMapping("/deleteuser/{uid}")
-		public ResponseEntity<String> deleteUser(@PathVariable int uid) throws UserNotFoundException {
-			try {
-				adminservice.deleteUsers(uid);
-				return new ResponseEntity<String>("User Deleted", HttpStatus.OK);
-			} catch (NoSuchElementException e) {
-				throw new UserNotFoundException();
-			}
-		}*/
-		
-
-		
 		
 }
